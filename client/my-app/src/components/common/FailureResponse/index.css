@@ -1,0 +1,116 @@
+
+.failure-container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.failure-content {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.failure-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.failure-icon span {
+  color: #f87171;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.failure-title {
+  color: var(--text-primary, #f1f5f9);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.failure-message {
+  color: var(--text-secondary, #94a3b8);
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.failure-suggestions {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 15px;
+  background: var(--surface-secondary, rgba(148, 163, 184, 0.07));
+  border: 1px solid var(--border-color, rgba(148, 163, 184, 0.15));
+  border-radius: 10px;
+  text-align: left;
+}
+
+.failure-suggestions p {
+  display: flex;
+  gap: 9px;
+  color: var(--text-secondary, #aab5c5);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.failure-bullet {
+  color: #60a5fa;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.failure-retry-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.failure-retry-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.failure-retry-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.failure-retry-btn span {
+  font-size: 19px;
+}
+
+@media (max-width: 480px) {
+  .failure-title {
+    font-size: 17px;
+  }
+
+  .failure-message,
+  .failure-suggestions p {
+    font-size: 12px;
+  }
+}

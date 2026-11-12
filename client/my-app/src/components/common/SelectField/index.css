@@ -1,0 +1,57 @@
+
+.select-field {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width:30%;
+    align-items: center;
+}
+
+.select-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Light Mode */
+.select-field.light label {
+    color: #334155;
+}
+
+.select-field.light select {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+/* Dark Mode */
+.select-field.dark label {
+    color: #e4e4e7;
+}
+
+.select-field.dark select {
+    background-color: #18181b;
+    color: #f8fafc;
+    border: 1px solid #3f3f46;
+}
+
+/* Common Select Styles */
+.select-field select {
+    width: 100%;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.select-field select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.select-field select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

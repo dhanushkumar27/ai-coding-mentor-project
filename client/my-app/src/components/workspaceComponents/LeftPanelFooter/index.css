@@ -1,0 +1,59 @@
+.workspace-actions {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Common button styles */
+.workspace-actions button {
+    padding: 6px 15px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Light theme */
+.workspace-actions.light .reset-btn {
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+}
+
+.workspace-actions.light .reset-btn:hover {
+    background: #f1f5f9;
+}
+
+.workspace-actions.light .get-btn {
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+}
+
+.workspace-actions.light .get-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Dark theme */
+.workspace-actions.dark .reset-btn {
+    background: #27272a;
+    color: #e4e4e7;
+    border: 1px solid #3f3f46;
+}
+
+.workspace-actions.dark .reset-btn:hover {
+    background: #3f3f46;
+}
+
+.workspace-actions.dark .get-btn {
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+}
+
+.workspace-actions.dark .get-btn:hover {
+    background: #1d4ed8;
+}

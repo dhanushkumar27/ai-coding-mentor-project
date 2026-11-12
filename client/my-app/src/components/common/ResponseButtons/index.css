@@ -1,0 +1,40 @@
+.response-tab-btn {
+    padding: 6px 15px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Light Mode */
+.response-tab-btn.light {
+    background-color: #f1f5f9;
+    color: #334155;
+    border-color: #e2e8f0;
+}
+
+.response-tab-btn.light:hover {
+    background-color: #e2e8f0;
+}
+
+/* Dark Mode */
+.response-tab-btn.dark {
+    background-color: #27272a;
+    color: #d4d4d8;
+    border-color: #3f3f46;
+}
+
+.response-tab-btn.dark:hover {
+    background-color: #3f3f46;
+}
+
+/* Active Tab */
+.response-tab-btn.active {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+}

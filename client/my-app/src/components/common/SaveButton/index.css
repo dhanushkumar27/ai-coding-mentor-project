@@ -1,0 +1,49 @@
+.save-btn {
+    padding: 6px 15px;
+    margin-left: 10px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+/* Light Mode */
+.save-btn.light {
+    background-color: #f1f5f9;
+    color: #334155;
+    border-color: #e2e8f0;
+}
+
+.save-btn.light:hover:not(:disabled) {
+    background-color: #e2e8f0;
+}
+
+/* Dark Mode */
+.save-btn.dark {
+    background-color: #27272a;
+    color: #f4f4f5;
+    border-color: #3f3f46;
+}
+
+.save-btn.dark:hover:not(:disabled) {
+    background-color: #3f3f46;
+}
+
+/* Saved State */
+.save-btn.saved {
+    background-color: #16a34a;
+    color: #ffffff;
+    border-color: #16a34a;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.save-btn:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 3px;
+}

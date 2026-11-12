@@ -1,0 +1,37 @@
+.page-layout{
+    padding:5px;
+    width:100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page-header{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.page-body{
+    width: 100%;
+    flex:1;
+    min-width: 0;
+}
+
+.page-footer{
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.backgroundTheme-dark-page{
+    background-color: black;
+    color:white;
+}
+
+.backgroundTheme-light-page{
+    background-color: white;
+    color:black;
+   
+}

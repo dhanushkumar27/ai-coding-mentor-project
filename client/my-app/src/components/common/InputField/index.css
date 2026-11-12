@@ -1,0 +1,59 @@
+.input-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width:70%;
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Light Mode */
+.input-field.light label {
+    color: #334155;
+}
+
+.input-field.light input {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+/* Dark Mode */
+.input-field.dark label {
+    color: #e4e4e7;
+}
+
+.input-field.dark input {
+    background-color: #18181b;
+    color: #f8fafc;
+    border: 1px solid #3f3f46;
+}
+
+/* Common Input Styles */
+.input-field input {
+    width: 80%;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-field input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.input-field input::placeholder {
+    opacity: 0.6;
+}
+
+.input-field input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
