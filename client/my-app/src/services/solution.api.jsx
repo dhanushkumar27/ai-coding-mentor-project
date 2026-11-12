@@ -1,4 +1,4 @@
-const API_URL = `${import.meta.env.VITE_API_URL}/api/v1/solution`;
+const API_URL = `${import.meta.env.VITE_API_URL}/api/solution`;
 
 const getSolution = async (props) => {
     const {

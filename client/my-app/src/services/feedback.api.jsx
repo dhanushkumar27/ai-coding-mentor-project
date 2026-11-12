@@ -1,20 +1,21 @@
 
-
-const getFeedback = async (props) => {
-    const {
-    problemName,
-    programmingLanguage,
-    code,
-    apiKeyValue
-} = props 
-
 const API_URL = import.meta.env.VITE_API_URL;
 
 const FEEDBACK_API_URL = `${API_URL}/api/v1/feedback`;
 
-console.log(FEEDBACK_API_URL)
- 
-    const response = await fetch(API_URL, {
+const getFeedback = async (props) => {
+    const {
+        problemName,
+        programmingLanguage,
+        code,
+        apiKeyValue
+    } = props;
+
+    if (!API_URL) {
+        throw new Error("VITE_API_URL is not configured.");
+    }
+
+    const response = await fetch(FEEDBACK_API_URL, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -22,16 +23,22 @@ console.log(FEEDBACK_API_URL)
         body: JSON.stringify({
             problemName,
             programmingLanguage,
-            userInput:code,
-            apiKey:apiKeyValue
+            userInput: code,
+            apiKey: apiKeyValue
         }),
     });
-   
+
+    const responseData = await response.json();
+
     if (!response.ok) {
-        throw new Error("Failed to generate feedback.");
+        throw new Error(
+            responseData?.error?.message ||
+            responseData?.message ||
+            "Failed to generate feedback."
+        );
     }
 
-    return await response.json();
+    return responseData;
 };
 
-export default getFeedback
+export default getFeedback;
