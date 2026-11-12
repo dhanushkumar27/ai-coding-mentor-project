@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/feedback";
+
 
 const getFeedback = async (props) => {
     const {
@@ -8,6 +8,11 @@ const getFeedback = async (props) => {
     apiKeyValue
 } = props 
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+const FEEDBACK_API_URL = `${API_URL}/api/v1/feedback`;
+
+console.log(FEEDBACK_API_URL)
  
     const response = await fetch(API_URL, {
         method: "POST",

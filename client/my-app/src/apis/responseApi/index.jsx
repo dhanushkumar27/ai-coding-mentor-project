@@ -20,6 +20,7 @@ const responseApi = (props) =>{
 
     const onClickGetFeedback = async () => {
         console.log("Feedback button called")
+        console.log(import.meta.env.VITE_API_URL)
         setFeedbackStatus('InProgress')
         try {
 

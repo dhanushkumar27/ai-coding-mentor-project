@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/explanation";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/v1/explanation`;
 
 const getExplanation = async (props) => {
     const {
