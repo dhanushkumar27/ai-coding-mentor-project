@@ -1,7 +1,7 @@
 
 const API_URL = import.meta.env.VITE_API_URL;
 
-const FEEDBACK_API_URL = `${API_URL}/api/v1/feedback`;
+const FEEDBACK_API_URL = `${API_URL}/api/feedback`;
 
 const getFeedback = async (props) => {
     const {

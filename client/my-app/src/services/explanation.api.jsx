@@ -8,7 +8,6 @@ const getExplanation = async (props) => {
     apiKeyValue
 } = props 
 
-console.log(apiKeyValue)
 
     const response = await fetch(API_URL, {
         method: "POST",
